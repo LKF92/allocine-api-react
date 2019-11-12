@@ -1,22 +1,101 @@
-.App {
-  text-align: center;
+/* GLOBAL */
+body {
+  font-family: Arial, Sans-Serif;
 }
-
-.App-logo {
-  height: 40vmin;
+/* NAVBAR */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  background-color: #fecc00;
+  height: 15vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 60px;
+}
+.logo-brand {
+  height: 8vh;
 }
 
-.App-link {
-  color: #09d3ac;
+/* TABS */
+.header-tab {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs {
+  margin: 0 50px;
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+}
+.tab {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.current-tab {
+  cursor: pointer;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+.page-buttons {
+  margin: 30px 80px;
+}
+.previous-page,
+.current-page,
+.next-page {
+  cursor: pointer;
+  border: solid 1px grey;
+  background-color: white;
+  padding: 5px;
+  margin: 0 5px;
+  outline: none;
+}
+/* MOVIE CARD */
+/* the listing of all movies */
+.movies-list {
+  padding: 0;
+  margin: -10px 20px;
+  width: 95vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* the movie poster + movie details */
+.movie-card {
+  margin: 20px 20px;
+  background-color: white;
+  width: 45%;
+  height: 45vh;
+  display: flex;
+  box-shadow: 3px 3px 10px lightgrey;
+  border: none;
+}
+.movie-poster {
+  width: 40%;
+  object-fit: cover;
+}
+.movie-details {
+  font-family: Arial, Sans-Serif;
+  padding: 0.625rem 1.25rem;
+}
+h2.movie-title {
+  margin: 0.625rem 0;
+  font-size: 1.25rem;
+  font-family: "Montserrat", Arial, Sans-Serif;
+  font-size: 1.25rem;
+}
+.release-date {
+  color: grey;
+}
+.synopsis {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(60, 60, 60);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
 }
