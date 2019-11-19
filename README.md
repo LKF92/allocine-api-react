@@ -1,4 +1,4 @@
-### CHECK IT [HERE](https://allocine-clone-api-react.netlify.com/)
+# CHECK IT [HERE](https://allocine-clone-api-react.netlify.com/)
 
 ## Available Scripts
 
